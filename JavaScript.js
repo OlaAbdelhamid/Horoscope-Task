@@ -54,6 +54,7 @@ const checkBirthMonth = function(){
 
 }
 
+//Checking if the day is valid for each month
 const checkDayValidity = function(month){
     let day = prompt("Please enter your day of birth");
     if (month == '1' || month =='01'){
@@ -109,115 +110,8 @@ const checkDayValidity = function(month){
     
 }
 
-
+// To match the DOB with the correct zodiac sign
 const getHoroscope =  function(month, day){
-    // let horoscope = ""
-		
-		
-	// 	// checks month and date within the
-	// 	// valid range of a specified zodiac
-	// 	if (month == "12"){
-			
-	// 		if (day < 22)
-	// 		    horoscope = "Sagittarius";
-	// 		else
-	// 		    horoscope ="capricorn";
-    //         return horoscope
-    //     }
-			
-	// 	else if (month == "01" || "1"){
-	// 		if (day < 20)
-	// 		    horoscope = "Capricorn";
-	// 		else
-	// 		    horoscope = "aquarius";
-    //         return horoscope
-	// 	}
-			
-	// 	else if (month == "02" || "2"){
-	// 		if (day < 19)
-	// 		    horoscope = "Aquarius";
-	// 		else
-	// 		    horoscope = "pisces";
-    //         return horoscope
-    //     }
-			
-	// 	else if(month == "03" || "3"){
-	// 		if (day < 21)
-	// 		    horoscope = "Pisces";
-	// 		else
-	// 		    horoscope = "aries";
-    //         return horoscope
-    //         }
-	// 	else if (month == "04" || "4"){
-	// 		if (day < 20)
-	// 		    horoscope = "Aries";
-	// 		else
-	// 		    horoscope = "taurus";
-    //         return horoscope
-	// 	}
-			
-	// 	else if (month == "05" || "5"){
-	// 		if (day < 21)
-	// 		    horoscope = "Taurus";
-	// 		else
-	// 		    horoscope = "gemini";
-    //         return horoscope
-	// 	}
-			
-	// 	else if( month == "06" || "6"){
-	// 		if (day < 21)
-	// 		    horoscope = "Gemini";
-	// 		else
-	// 		    horoscope = "cancer";
-    //         return horoscope
-	// 	}
-			
-	// 	else if (month == "07" || "7"){
-	// 		if (day < 23)
-	// 		    horoscope = "Cancer";
-	// 		else
-	// 		    horoscope = "leo";
-    //         return horoscope
-	// 	}
-			
-	// 	else if( month == "08" || "8"){
-	// 		if (day < 23)
-	// 		    horoscope = "Leo";
-	// 		else
-	// 		    horoscope = "virgo";
-    //         return horoscope
-	// 	}
-			
-	// 	else if (month == "09" || "9"){
-	// 		if (day < 23)
-	// 		    horoscope = "Virgo";
-	// 		else
-	// 		    horoscope = "libra";
-    //         return horoscope
-	// 	}
-			
-	// 	else if (month == "10"){
-	// 		if (day < 23)
-	// 		    horoscope = "Libra";
-	// 		else
-	// 		    horoscope = "scorpio";
-    //         return horoscope
-	// 	}
-			
-	// 	else if (month == "11"){
-	// 		if (day < 22)
-	// 		    horoscope = "scorpio";
-	// 		else
-	// 		    horoscope = "sagittarius";
-    //         return horoscope
-	// 	}
-	// 	console.log(day);
-    //     console.log(month);	
-    //     console.log(horoscope);
-	// 	return horoscope;
-	
-
-    // }
     if((month == 1 && day <= 20) || (month == 12 && day >=22)) {
         return "Capricorn";
       } else if ((month == 1 && day >= 21) || (month == 2 && day <= 18)) {
@@ -244,9 +138,6 @@ const getHoroscope =  function(month, day){
         return "Sagittarius";
       }
     }
-
-//     
-
 
 
 let username = ValidateName();
